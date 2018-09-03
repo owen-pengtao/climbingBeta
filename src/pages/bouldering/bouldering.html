@@ -1,63 +1,18 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Bouldering Beta</ion-title>
+    <ion-title>Bouldering Zone</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="page-bouldering">
 
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let zone of zoneList" (click)="onZoneSelect(zone.id)">
       <ion-thumbnail item-start>
-        <img src="assets/imgs/card-saopaolo.png">
+        <img src="assets/imgs/zone{{zone.id}}.png">
       </ion-thumbnail>
-      <h2>Zone 1</h2>
-      <p>23 Routes • 12 Betas</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/imgs/card-saopaolo.png">
-      </ion-thumbnail>
-      <h2>Zone 1</h2>
-      <p>23 Routes • 12 Betas</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/imgs/card-saopaolo.png">
-      </ion-thumbnail>
-      <h2>Zone 1</h2>
-      <p>23 Routes • 12 Betas</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/imgs/card-saopaolo.png">
-      </ion-thumbnail>
-      <h2>Zone 1</h2>
-      <p>23 Routes • 12 Betas</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/imgs/card-saopaolo.png">
-      </ion-thumbnail>
-      <h2>Zone 1</h2>
-      <p>23 Routes • 12 Betas</p>
-      <button ion-button clear item-end>View</button>
-    </ion-item>
-
-    <ion-item>
-      <ion-thumbnail item-start>
-        <img src="assets/imgs/card-saopaolo.png">
-      </ion-thumbnail>
-      <h2>Zone 1</h2>
-      <p>23 Routes • 12 Betas</p>
+      <h2>{{zone.name}}</h2>
+      <p>{{zone.totalRoutes || 0}} Routes • {{zone.totalBetas || 0}} Betas</p>
       <button ion-button clear item-end>View</button>
     </ion-item>
   </ion-list>

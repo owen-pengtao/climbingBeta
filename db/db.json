@@ -1,16 +1,16 @@
 {
   "zones": [
-    { "id": 1, "name": "Zone 1" },
-    { "id": 2, "name": "Zone 2" },
-    { "id": 3, "name": "Zone 3" }
+    { "id": 1, "name": "Zone 1", "totalRoutes": 23, "totalBetas": 12 },
+    { "id": 2, "name": "Zone 2", "totalRoutes": 18, "totalBetas": 8 },
+    { "id": 3, "name": "Zone 3", "totalRoutes": 29, "totalBetas": 26 }
   ],
   "routes": [
-    { "id": 1, "zone": 1, "routeSetter": "Admin", "color": "red", "date": "09/02/2018", "grade": "v5" },
-    { "id": 2, "zone": 1, "routeSetter": "Admin", "color": "green", "date": "08/20/2018", "grade": "v1" },
-    { "id": 3, "zone": 2, "routeSetter": "John", "color": "blue", "date": "08/20/2018", "grade": "v2" },
-    { "id": 4, "zone": 1, "routeSetter": "Kenny", "color": "pink", "date": "08/20/2018", "grade": "v5" },
-    { "id": 5, "zone": 3, "routeSetter": "Miles", "color": "gray", "date": "09/02/2018", "grade": "v4" },
-    { "id": 6, "zone": 2, "routeSetter": "Miles", "color": "orange", "date": "09/02/2018", "grade": "v4" }
+    { "id": 1, "zone": 1, "totalBetas": 4, "routeSetter": "Admin", "color": "red", "date": "09/02/2018", "grade": "v5" },
+    { "id": 2, "zone": 1, "totalBetas": 1, "routeSetter": "Admin", "color": "green", "date": "08/20/2018", "grade": "v1" },
+    { "id": 3, "zone": 2, "totalBetas": 1, "routeSetter": "John", "color": "blue", "date": "08/20/2018", "grade": "v2" },
+    { "id": 4, "zone": 1, "totalBetas": 5, "routeSetter": "Kenny", "color": "pink", "date": "08/20/2018", "grade": "v5" },
+    { "id": 5, "zone": 3, "totalBetas": 3, "routeSetter": "Miles", "color": "gray", "date": "09/02/2018", "grade": "v4" },
+    { "id": 6, "zone": 2, "totalBetas": 2, "routeSetter": "Miles", "color": "orange", "date": "09/02/2018", "grade": "v4" }
   ],
   "betas": [
     { "id": 1, "zone": 1, "route": 1,

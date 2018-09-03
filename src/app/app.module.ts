@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { BoulderingPage } from '../pages/bouldering/bouldering';
+import { RouteListPage } from '../pages/route-list/route-list';
+import { RouteDetailPage } from '../pages/route-detail/route-detail';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -19,6 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     BoulderingPage,
+    RouteListPage,
+    RouteDetailPage,
     TabsPage
   ],
   imports: [
@@ -32,6 +36,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     BoulderingPage,
+    RouteListPage,
+    RouteDetailPage,
     TabsPage
   ],
   providers: [
