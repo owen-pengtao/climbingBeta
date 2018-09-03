@@ -6,7 +6,7 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
+import { UploadPage } from '../pages/upload/upload';
 import { BoulderingPage } from '../pages/bouldering/bouldering';
 import { RouteListPage } from '../pages/route-list/route-list';
 import { RouteDetailPage } from '../pages/route-detail/route-detail';
@@ -19,7 +19,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
+    UploadPage,
     BoulderingPage,
     RouteListPage,
     RouteDetailPage,
@@ -34,7 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
+    UploadPage,
     BoulderingPage,
     RouteListPage,
     RouteDetailPage,

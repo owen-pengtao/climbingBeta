@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Upload
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Zone *</ion-label>
+      <ion-select>
+        <ion-option value="1">Zone1</ion-option>
+        <ion-option value="2">Zone2</ion-option>
+        <ion-option value="3">Zone3</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Route *</ion-label>
+      <ion-select>
+        <ion-option value="1">Zone1</ion-option>
+        <ion-option value="2">Zone2</ion-option>
+        <ion-option value="3">Zone3</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Your name *</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item stacked>
+      <ion-label stacked>Paste video url</ion-label>
+      <ion-toggle [(ngModel)]="isVideoUrl"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked *ngIf="!isVideoUrl">Select video</ion-label>
+      <ion-input type="file" *ngIf="!isVideoUrl"></ion-input>
+
+      <ion-label stacked *ngIf="isVideoUrl">Video url</ion-label>
+      <ion-input type="url" *ngIf="isVideoUrl" placeholder="http://"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Route tips</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>contacts</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button class="submit" ion-button icon-end>
+        Upload
+        <ion-icon name="cloud-upload"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+</ion-content>

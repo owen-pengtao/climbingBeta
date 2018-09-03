@@ -18,7 +18,7 @@
   <ion-list>
     <ion-item *ngFor="let route of routeList" (click)="onRouteSelect(route.id)">
       <ion-thumbnail item-start>
-        <img src="assets/imgs/zone{{route.id}}.png">
+        <img src="assets/imgs/zone{{route.zone}}.png">
       </ion-thumbnail>
       <h2>{{route.color}}, {{route.grade}}, {{route.routeSetter}} ({{route.totalBetas || 0}} Betas)</h2>
       <p>
