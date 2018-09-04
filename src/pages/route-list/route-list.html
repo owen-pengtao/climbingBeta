@@ -1,29 +1,18 @@
-<!--
-  Generated template for the RouteListPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
     <ion-title>Route list</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
-<ion-content padding>
+<ion-content>
 
   <ion-list>
     <ion-item *ngFor="let route of routeList" (click)="onRouteSelect(route.id)">
       <ion-thumbnail item-start>
-        <img src="assets/imgs/zone{{route.zone}}.png">
+        <img src="{{route.images[0]}}">
       </ion-thumbnail>
       <h2>{{route.color}}, {{route.grade}}, {{route.routeSetter}} ({{route.totalBetas || 0}} Betas)</h2>
-      <p>
-        Route set on {{route.date}}
-      </p>
+      <p>Route set on {{route.date}}</p>
       <button ion-button clear item-end>View</button>
     </ion-item>
   </ion-list>

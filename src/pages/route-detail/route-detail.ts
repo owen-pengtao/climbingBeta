@@ -17,22 +17,22 @@ import {Beta} from "../model";
   providers: [ RouteDetailService ]
 })
 export class RouteDetailPage {
-  selectedZoneId: number = 0;
-  beta: Beta;
+  selectedRouteId: number = 0;
+  betaList: Beta[];
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               private routeDetailService: RouteDetailService) {
-    this.selectedZoneId = navParams.get("zoneId");
-    console.log('selectedZoneId: ' + this.selectedZoneId);
+    this.selectedRouteId = navParams.get("routeId");
+    this.getBetaDetail(this.selectedRouteId);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RouteDetailPage');
   }
 
-  getBetaDetail(BetaId) {
-    this.routeDetailService.getBeta(BetaId).subscribe((res: Beta) => {
-      this.beta = res;
+  getBetaDetail(routeId) {
+    this.routeDetailService.getBetasByRouteId(routeId).subscribe((res: Beta[]) => {
+      this.betaList = res;
     });
   }
 }

@@ -15,28 +15,12 @@
 
 <ion-content class="card-background-page">
 
-  <ion-card>
-    <img src="assets/imgs/zone1.png"/>
-    <div class="card-title">Owen <span>(09/02/2018)</span></div>
-    <div class="card-subtitle">Tip: right foot toe hook the second hold, right foot toe hook the second hold, right foot toe hook the second hold, right foot toe hook the second hold, right foot toe hook the second hold, right foot toe hook the second hold.</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/imgs/zone2.png"/>
-    <div class="card-title">Amsterdam</div>
-    <div class="card-subtitle">64 Listings</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/imgs/zone3.png"/>
-    <div class="card-title">San Francisco</div>
-    <div class="card-subtitle">72 Listings</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="assets/imgs/zone4.png"/>
-    <div class="card-title">Madison</div>
-    <div class="card-subtitle">28 Listings</div>
+  <ion-card *ngFor="let beta of betaList">
+    <video *ngIf="beta.videoPath" width="100%" controls>
+      <source [src]="beta.videoPath" type="video/mp4">
+    </video>
+    <div class="card-title">{{beta.performer}} <span>({{beta.date}})</span></div>
+    <div class="card-subtitle" *ngIf="beta.tips">Tip: {{beta.tips}}</div>
   </ion-card>
 
 </ion-content>

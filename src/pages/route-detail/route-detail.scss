@@ -2,13 +2,13 @@ page-route-detail {
   .card-background-page ion-card {
     position: relative;
     text-align: center;
-    img {
+    video {
       display: block;
       width: 100%;
     }
     .card-title {
       position: absolute;
-      top: 36%;
+      top: 10%;
       font-size: 26px;
       width: 100%;
       font-weight: 700;
@@ -20,7 +20,7 @@ page-route-detail {
     .card-subtitle {
       font-size: 14px;
       position: absolute;
-      top: 52%;
+      top: 22%;
       width: 100%;
       color: #fff;
     }

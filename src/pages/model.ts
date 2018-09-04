@@ -3,6 +3,7 @@ export class Zone {
   name: string;
   totalRoutes: number;
   totalBetas: number;
+  image: string;
 }
 
 export class Route {
@@ -13,6 +14,7 @@ export class Route {
   color: string;
   date: string;
   grade: string;
+  image: string[];
 }
 
 

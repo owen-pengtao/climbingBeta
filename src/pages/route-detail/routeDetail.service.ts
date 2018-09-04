@@ -11,8 +11,8 @@ export class RouteDetailService {
   constructor(private http: HttpClient) {
   }
 
-  getBeta(betaId: number): Observable<Beta> {
-    return this.http.get("http://localhost:3000/betas?id=" + betaId)
-      .map((res: Beta) => res);
+  getBetasByRouteId(routeId: number): Observable<Beta[]> {
+    return this.http.get("http://localhost:3000/betas?route=" + routeId)
+      .map((res: Beta[]) => res);
   }
 }
