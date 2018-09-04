@@ -14,13 +14,13 @@
   ],
   "betas": [
     { "id": 1, "zone": 1, "route": 1,
-      "video_path": "betas/zone1/20180902_Admin_Red_V5/owen_1.m4v",
-      "video_url": "",
+      "videoPath": "betas/zone1/20180902_Admin_Red_V5/owen_1.m4v",
+      "videoUrl": "",
       "performer": "Owen", "date": "09/02/2018", "tips": "right foot toe hook the second hold", "contacts": "owen.pengtao@gmail.com"
     },
     { "id": 2, "zone": 1, "route": 2,
-      "video_path": "betas/zone1/20180902_Admin_Red_V5/ress_2.m4v",
-      "video_url": "https://youtu.be/3Y-PxUIzs5M",
+      "videoPath": "betas/zone1/20180902_Admin_Red_V5/ress_2.m4v",
+      "videoUrl": "https://youtu.be/3Y-PxUIzs5M",
       "performer": "Ress", "date": "09/02/2018", "tips": "dyno as far as you can", "contacts": ""
     }
   ]
