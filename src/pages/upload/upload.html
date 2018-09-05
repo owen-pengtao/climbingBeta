@@ -1,16 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Upload
+      Upload your climbing beta
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <form (ngSubmit)="upload()" [formGroup]="uploadForm">
+    <form (ngSubmit)="upload()" [formGroup]="uploadForm" action="?" method="post" enctype="multipart/form-data">
       <ion-item>
-        <ion-label stacked>Zone *</ion-label>
+        <ion-label stacked>Zone<span>*</span></ion-label>
         <ion-select formControlName="zone">
           <ion-option value="1">Zone1</ion-option>
           <ion-option value="2">Zone2</ion-option>
@@ -19,7 +19,7 @@
       </ion-item>
 
       <ion-item>
-        <ion-label stacked>Route *</ion-label>
+        <ion-label stacked>Route<span>*</span></ion-label>
         <ion-select formControlName="route">
           <ion-option value="1">Red V5 Admin</ion-option>
           <ion-option value="2">Yellow V2 Kenny</ion-option>
@@ -28,31 +28,28 @@
       </ion-item>
 
       <ion-item>
-        <ion-label stacked>Your name *</ion-label>
+        <ion-label stacked>Your name<span>*</span></ion-label>
         <ion-input type="text" formControlName="performer"></ion-input>
       </ion-item>
 
-      <ion-item stacked>
+      <ion-item>
         <ion-label stacked>Paste video url</ion-label>
         <ion-toggle (ionChange)="switchVideoSource(isVideoUrl)"></ion-toggle>
       </ion-item>
 
-      <ion-item>
-        <ion-label stacked *ngIf="!isVideoUrl">Select video</ion-label>
-        <ion-input type="file" formControlName="videoPath" *ngIf="!isVideoUrl"></ion-input>
+      <ion-item *ngIf="!isVideoUrl">
+        <label stacked>Select video<span>*</span></label>
+        <input type="file" name="videoPath" formControlName="videoPath">
+      </ion-item>
 
-        <ion-label stacked *ngIf="isVideoUrl">Video url</ion-label>
-        <ion-input type="url" formControlName="videoUrl" *ngIf="isVideoUrl" placeholder="http://"></ion-input>
+      <ion-item *ngIf="isVideoUrl">
+        <ion-label stacked>Video url<span>*</span></ion-label>
+        <ion-input type="url" formControlName="videoUrl" placeholder="http://"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label stacked>Route tips</ion-label>
         <ion-textarea formControlName="tips"></ion-textarea>
-      </ion-item>
-
-      <ion-item>
-        <ion-label stacked>contacts</ion-label>
-        <ion-input type="text" formControlName="contacts"></ion-input>
       </ion-item>
 
       <ion-item>

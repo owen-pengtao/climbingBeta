@@ -6,7 +6,7 @@
 
 <ion-content>
 
-  <ion-list>
+  <ion-list class="cb-list-item">
     <ion-item *ngFor="let route of routeList" (click)="onRouteSelect(route.id)">
       <ion-thumbnail item-start>
         <img src="{{route.images[0]}}">

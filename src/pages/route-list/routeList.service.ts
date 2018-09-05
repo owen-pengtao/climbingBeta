@@ -12,7 +12,7 @@ export class RouteListService {
   }
 
   getRoutesByZoneId(zoneId: number): Observable<Route[]> {
-    return this.http.get("http://localhost:3000/routes?zone=" + zoneId)
+    return this.http.get("/api/routes?zone=" + zoneId)
       .map((res: Route[]) => res);
   }
 }

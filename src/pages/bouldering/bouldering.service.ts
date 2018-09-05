@@ -12,7 +12,7 @@ export class BoulderingService {
   }
 
   getZones(): Observable<Zone[]> {
-    return this.http.get("http://localhost:3000/zones")
+    return this.http.get("/api/zones")
       .map((res: Zone[]) => res);
   }
 }

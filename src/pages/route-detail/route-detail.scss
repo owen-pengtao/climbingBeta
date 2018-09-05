@@ -1,28 +1,33 @@
+@import "../../theme/variables";
+
 page-route-detail {
   .card-background-page ion-card {
-    position: relative;
     text-align: center;
+    box-shadow: 0 1px 2px color($colors, primary);
+    background-color: color($colors, light);;
     video {
       display: block;
       width: 100%;
+      border-bottom: 0.55px solid color($colors, primary);
     }
     .card-title {
-      position: absolute;
-      top: 10%;
-      font-size: 26px;
+      margin-bottom: 5px;
+      font-size: 24px;
       width: 100%;
-      font-weight: 700;
-      color: #fff;
+      font-weight: 600;
+      height: 40px;
+      line-height: 40px;
       span{
         font-size: 14px;
       }
     }
     .card-subtitle {
       font-size: 14px;
-      position: absolute;
-      top: 22%;
       width: 100%;
-      color: #fff;
+      line-height: 180%;
+      margin-bottom: 10px;
+      text-align: left;
+      padding: 0 10px;
     }
   }
 }

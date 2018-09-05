@@ -1,8 +1,13 @@
 page-upload {
-  .label-ios[stacked] {
+  .label-ios[stacked], label[stacked] {
     font-weight: 500;
     font-size: 14px;
     color: #6a6a6a;
+    display: block;
+    span {
+      margin-left: 5px;
+      color: color($colors, danger);
+    }
   }
   button[type="submit"] {
     width: 100%;

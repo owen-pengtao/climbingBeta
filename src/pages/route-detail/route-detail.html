@@ -16,8 +16,8 @@
 <ion-content class="card-background-page">
 
   <ion-card *ngFor="let beta of betaList">
-    <video *ngIf="beta.videoPath" width="100%" controls>
-      <source [src]="beta.videoPath" type="video/mp4">
+    <video *ngIf="beta.videoPath" width="100%" preload="metadata" controls>
+      <source [src]="beta.videoPath + '#t=0.1'" type="video/mp4">
     </video>
     <div class="card-title">{{beta.performer}} <span>({{beta.date}})</span></div>
     <div class="card-subtitle" *ngIf="beta.tips">Tip: {{beta.tips}}</div>

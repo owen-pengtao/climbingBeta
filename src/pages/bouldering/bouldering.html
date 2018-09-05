@@ -4,9 +4,9 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="page-bouldering">
+<ion-content>
 
-  <ion-list>
+  <ion-list class="cb-list-item">
     <ion-item *ngFor="let zone of zoneList" (click)="onZoneSelect(zone.id)">
       <ion-thumbnail item-start>
         <img src="{{zone.image}}">

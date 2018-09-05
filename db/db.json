@@ -18,7 +18,7 @@
       "images": []
     },
     { "id": 5, "zone": 3, "totalBetas": 1, "routeSetter": "Miles", "color": "Orange", "date": "08/16/2018", "grade": "v2",
-      "images": ["assets/betas/zone2/20180816_orange_v2/1.jpg", "assets/betas/zone2/20180816_orange_v2/2.jpg"]
+      "images": ["assets/betas/zone3/20180816_orange_v2/1.jpg", "assets/betas/zone3/20180816_orange_v2/2.jpg"]
     },
     { "id": 6, "zone": 2, "totalBetas": 1, "routeSetter": "John", "color": "Orange", "date": "08/16/2018", "grade": "v5",
       "images": ["assets/betas/zone2/20180816_orange_v5/1.jpg", "assets/betas/zone2/20180816_orange_v5/2.jpg"]
@@ -28,22 +28,27 @@
     { "id": 1, "zone": 2, "route": 3,
       "videoPath": "assets/betas/zone2/20180801_green_v2/owen1.m4v",
       "videoUrl": "",
-      "performer": "Owen", "date": "09/02/2018", "tips": "", "contacts": "owen.pengtao@gmail.com"
+      "performer": "Owen", "date": "09/02/2018", "tips": "campus everything."
     },
     { "id": 2, "zone": 2, "route": 2,
       "videoPath": "assets/betas/zone2/20180801_blue_v3/boya1.m4v",
       "videoUrl": "https://youtu.be/3Y-PxUIzs5M",
-      "performer": "Boya", "date": "09/02/2018", "tips": "always keep your foot on the wall.", "contacts": ""
+      "performer": "Boya", "date": "09/02/2018", "tips": "always keep your foot on the wall."
     },
     { "id": 3, "zone": 2, "route": 6,
       "videoPath": "assets/betas/zone2/20180816_orange_v5/owen1.m4v",
       "videoUrl": "",
-      "performer": "Owen", "date": "09/02/2018", "tips": "", "contacts": ""
+      "performer": "Owen", "date": "09/02/2018", "tips": ""
     },
-    { "id": 3, "zone": 3, "route": 5,
-      "videoPath": "assets/betas/zone2/20180816_orange_v2/boya1.m4v",
+    { "id": 4, "zone": 3, "route": 5,
+      "videoPath": "assets/betas/zone3/20180816_orange_v2/boya1.m4v",
       "videoUrl": "",
-      "performer": "Boya", "date": "09/02/2018", "tips": "", "contacts": ""
+      "performer": "Boya", "date": "09/02/2018", "tips": ""
+    },
+    { "id": 5, "zone": 2, "route": 3,
+      "videoPath": "assets/betas/zone3/20180816_orange_v2/boya1.m4v",
+      "videoUrl": "",
+      "performer": "Owen", "date": "09/02/2018", "tips": ""
     }
   ]
 }

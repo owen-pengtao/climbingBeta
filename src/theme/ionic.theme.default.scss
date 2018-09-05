@@ -1,0 +1,20 @@
+.cb-list-item{
+  .item-block{
+    .item-inner, &:last-child {
+      border-bottom: 0.55px solid color($colors, primary);
+    }
+    img {
+      border: 1px solid color($colors, primary);
+      border-radius: 5px;
+    }
+    &:active {
+      background-color: color($colors, primary);
+      img {
+        border-color: color($colors, light);
+      }
+      p, button {
+        color: color($colors, light);
+      }
+    }
+  }
+}

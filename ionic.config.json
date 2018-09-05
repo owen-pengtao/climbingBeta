@@ -2,5 +2,11 @@
   "name": "climbingBeta",
   "integrations": {},
   "type": "ionic-angular",
-  "pro_id": "dd53ebd8"
+  "pro_id": "dd53ebd8",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost:3000/api"
+    }
+  ]
 }

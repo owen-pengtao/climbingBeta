@@ -12,7 +12,7 @@ export class RouteDetailService {
   }
 
   getBetasByRouteId(routeId: number): Observable<Beta[]> {
-    return this.http.get("http://localhost:3000/betas?route=" + routeId)
+    return this.http.get("/api/betas?route=" + routeId)
       .map((res: Beta[]) => res);
   }
 }
