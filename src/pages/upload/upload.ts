@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { NavController } from 'ionic-angular';
+import { SelectOption, Zone} from "../model";
 
 @Component({
   selector: 'page-upload',
@@ -9,8 +10,11 @@ import { NavController } from 'ionic-angular';
 export class UploadPage {
   isVideoUrl: boolean = false;
   uploadForm: FormGroup;
+  zoneOptions: Zone[];
+  routeOptions: SelectOption[];
 
-  constructor(public navCtrl: NavController, public formBuilder: FormBuilder) {
+  constructor(public navCtrl: NavController,
+              public formBuilder: FormBuilder) {
     this.uploadForm = formBuilder.group({
       zone: ['1'],
       route: ['2'],

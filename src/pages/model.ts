@@ -22,10 +22,14 @@ export class Beta {
   id: number;
   zone: number;
   route: number;
-  videoPath: string;
-  videoUrl: string;
+  videoSource: string;
   performer: string;
-  date: string;
-  tips: string;
-  contacts: string;
+  date?: string;
+  tips?: string;
+  contacts?: string;
+}
+
+export class SelectOption {
+  value: number;
+  label: string;
 }

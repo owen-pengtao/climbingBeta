@@ -26,28 +26,27 @@
   ],
   "betas": [
     { "id": 1, "zone": 2, "route": 3,
-      "videoPath": "assets/betas/zone2/20180801_green_v2/owen1.m4v",
-      "videoUrl": "",
+      "videoSource": "assets/betas/zone2/20180801_green_v2/owen1.m4v",
       "performer": "Owen", "date": "09/02/2018", "tips": "campus everything."
     },
     { "id": 2, "zone": 2, "route": 2,
-      "videoPath": "assets/betas/zone2/20180801_blue_v3/boya1.m4v",
-      "videoUrl": "https://youtu.be/3Y-PxUIzs5M",
+      "videoSource": "assets/betas/zone2/20180801_blue_v3/boya1.m4v",
       "performer": "Boya", "date": "09/02/2018", "tips": "always keep your foot on the wall."
     },
     { "id": 3, "zone": 2, "route": 6,
-      "videoPath": "assets/betas/zone2/20180816_orange_v5/owen1.m4v",
-      "videoUrl": "",
+      "videoSource": "assets/betas/zone2/20180816_orange_v5/owen1.m4v",
       "performer": "Owen", "date": "09/02/2018", "tips": ""
     },
     { "id": 4, "zone": 3, "route": 5,
-      "videoPath": "assets/betas/zone3/20180816_orange_v2/boya1.m4v",
-      "videoUrl": "",
+      "videoSource": "assets/betas/zone3/20180816_orange_v2/boya1.m4v",
       "performer": "Boya", "date": "09/02/2018", "tips": ""
     },
     { "id": 5, "zone": 2, "route": 3,
-      "videoPath": "assets/betas/zone3/20180816_orange_v2/boya1.m4v",
-      "videoUrl": "",
+      "videoSource": "assets/betas/zone3/20180816_orange_v2/boya1.m4v",
+      "performer": "Owen", "date": "09/02/2018", "tips": ""
+    },
+    { "id": 6, "zone": 2, "route": 3,
+      "videoSource": "https://youtu.be/3Y-PxUIzs5M",
       "performer": "Owen", "date": "09/02/2018", "tips": ""
     }
   ]
